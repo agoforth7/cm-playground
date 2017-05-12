@@ -139,7 +139,7 @@ body {
   margin: 0px auto;
   min-width: 1500px;
   position: absolute;
-  bottom: -10px;
+  bottom: -15px;
 }
 
 .walking-kids div {
@@ -155,7 +155,7 @@ body {
 .kids {
   background-image: url(images/kids.gif);
   background-size: contain;
-  animation: kidWalk 35s linear infinite;
+  animation: kidWalk 50s linear infinite;
 }
 
 .bottom-clouds {
@@ -184,7 +184,7 @@ body {
 
 @keyframes animatedCloud-3 {
   0% {
-    background-position: -100% 40%;
+    background-position: -80% 40%;
   }
   100% {
     background-position: 100% 40%;
@@ -193,7 +193,7 @@ body {
 
 @keyframes animatedCloud-1 {
   0% {
-    background-position: -70% 15%;
+    background-position: -50% 15%;
   }
   100% {
     background-position: 130% 15%;
@@ -202,7 +202,7 @@ body {
 
 @keyframes animatedCloud-2 {
   0% {
-    background-position: -55% 25%;
+    background-position: -35% 25%;
   }
   100% {
     background-position: 145% 25%;
