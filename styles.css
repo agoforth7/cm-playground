@@ -1,0 +1,219 @@
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Overlock', cursive;
+  color: #4B4B4B;
+  overflow-x: hidden;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  padding-top: 35px;
+  background-image: url("images/homepage_header.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.top-bar {
+  padding: 0 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.clearfix:after {
+ content: " ";
+ visibility: hidden;
+ display: block;
+ height: 0;
+ clear: both;
+}
+
+.top-bar-left {
+  float: left;
+}
+
+.top-bar-right {
+  float: right;
+}
+
+.menu {
+  margin: 0;
+  list-style-type: none;
+}
+
+.menu > li:first-child {
+  margin-left: 0;
+}
+
+.menu > li:last-child {
+  margin-right: 0;
+}
+
+.menu > li {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.menu > li > a {
+  border-radius: 20px;
+  padding: 10px 30px;
+  background: #feb452;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: 'Overlock', cursive;
+  font-weight: 800;
+  margin: 0 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.animated-clouds {
+  width: 100%;
+  height: 300px;
+  display: block;
+  margin: 0px auto;
+  min-width: 1500px;
+  position: relative;
+}
+
+.animated-clouds div {
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+}
+
+.cloud-3 {
+  background-image: url(images/homepage-animated-cloud-3.png);
+  animation: animatedCloud-3 48s linear infinite;
+  background-size: 200px auto;
+}
+
+.cloud-1 {
+  background-image: url(images/homepage-animated-cloud-1.png);
+  animation: animatedCloud-1 45s linear infinite;
+  background-size: 125px auto;
+}
+
+.cloud-2 {
+  background-image: url(images/homepage-animated-cloud-2.png);
+  animation: animatedCloud-2 45s linear infinite;
+  background-size: 300px auto;
+}
+
+.tree {
+  position: absolute;
+  bottom: -10px;
+  left: 21%;
+  text-align: center;
+}
+
+.bench {
+  position: absolute;
+  bottom: -25px;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+.teens {
+  position: absolute;
+  bottom: -10px;
+  right: 24%;
+  text-align: center;
+}
+
+.walking-kids {
+  width: 100%;
+  height: 110px;
+  display: block;
+  margin: 0px auto;
+  min-width: 1500px;
+  position: absolute;
+  bottom: -10px;
+}
+
+.walking-kids div {
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  background-repeat: no-repeat;
+}
+
+.kids {
+  background-image: url(images/kids.gif);
+  background-size: contain;
+  animation: kidWalk 35s linear infinite;
+}
+
+.bottom-clouds {
+  text-align: center;
+  position: absolute;
+  overflow: hidden;
+  bottom: -100px;
+  height: 395px;
+  width: 100%;
+  z-index: 0;
+  right: 0;
+  left: 0;
+}
+
+.bottom-clouds-left {
+  position: absolute;
+  left: -190px;
+  bottom: -140px;
+}
+
+.bottom-clouds-right {
+  position: absolute;
+  right: -190px;
+  bottom: -120px;
+}
+
+@keyframes animatedCloud-3 {
+  0% {
+    background-position: -100% 40%;
+  }
+  100% {
+    background-position: 100% 40%;
+  }
+}
+
+@keyframes animatedCloud-1 {
+  0% {
+    background-position: -70% 15%;
+  }
+  100% {
+    background-position: 130% 15%;
+  }
+}
+
+@keyframes animatedCloud-2 {
+  0% {
+    background-position: -55% 25%;
+  }
+  100% {
+    background-position: 145% 25%;
+  }
+}
+
+@keyframes kidWalk {
+  0% {
+    background-position: 90%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
